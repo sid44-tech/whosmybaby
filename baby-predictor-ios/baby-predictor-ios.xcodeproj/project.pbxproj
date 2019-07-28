@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		326377A322EE326D00347F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326377A222EE326D00347F1A /* AppDelegate.swift */; };
-		326377A522EE326D00347F1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326377A422EE326D00347F1A /* ViewController.swift */; };
 		326377A822EE326D00347F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326377A622EE326D00347F1A /* Main.storyboard */; };
 		326377AA22EE326E00347F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326377A922EE326E00347F1A /* Assets.xcassets */; };
 		326377AD22EE326E00347F1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326377AB22EE326E00347F1A /* LaunchScreen.storyboard */; };
@@ -87,7 +86,6 @@
 		0EC5CC0B5D02B9DEBEC4EED1 /* Pods-baby-predictor-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baby-predictor-ios.release.xcconfig"; path = "Target Support Files/Pods-baby-predictor-ios/Pods-baby-predictor-ios.release.xcconfig"; sourceTree = "<group>"; };
 		3263779F22EE326D00347F1A /* baby-predictor-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "baby-predictor-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		326377A222EE326D00347F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		326377A422EE326D00347F1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		326377A722EE326D00347F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		326377A922EE326E00347F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		326377AC22EE326E00347F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 				32AF2C3D22EE35950026F834 /* widget */,
 				32AF2BD222EE33FF0026F834 /* images */,
 				326377A222EE326D00347F1A /* AppDelegate.swift */,
-				326377A422EE326D00347F1A /* ViewController.swift */,
 				326377A622EE326D00347F1A /* Main.storyboard */,
 				326377A922EE326E00347F1A /* Assets.xcassets */,
 				326377AB22EE326E00347F1A /* LaunchScreen.storyboard */,
@@ -505,7 +502,6 @@
 				32AF2C5022EE365F0026F834 /* SolarTerm.m in Sources */,
 				32AF2C5422EE36B50026F834 /* BaseViewController.swift in Sources */,
 				32AF2C4622EE35EF0026F834 /* PredictorUtil.swift in Sources */,
-				326377A522EE326D00347F1A /* ViewController.swift in Sources */,
 				326377A322EE326D00347F1A /* AppDelegate.swift in Sources */,
 				32AF2C6022EE37270026F834 /* StatisticalPredictorController.swift in Sources */,
 				32AF2C4122EE35C00026F834 /* UIMaterialTextField.swift in Sources */,

@@ -12,6 +12,8 @@ class ChinesePredictorController : BaseViewController, UITextFieldDelegate {
     var selectedDate = 0
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         if StorageUtil.getPropFor(key: "chinese-date-selection") == "" {
             selectedDate = 0
             StorageUtil.updatePropStringFor(key: "chinese-date-selection", value: "0")
@@ -127,6 +129,8 @@ class ChinesePredictorController : BaseViewController, UITextFieldDelegate {
         } else {
             StorageUtil.updatePropStringFor(key: "chinese-date-selection", value: "1")
         }
+        
+        GenderSelectController.LOAD_INTERSTITIAL = true
         
         dismiss(animated: true, completion: nil)
     }

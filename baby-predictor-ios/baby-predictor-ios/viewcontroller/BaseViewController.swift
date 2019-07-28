@@ -1,15 +1,18 @@
 
 
 import UIKit
-//import GoogleMobileAds
+import GoogleMobileAds
 
 class BaseViewController: UIViewController {
     var back: UIImageView!
     var logo: UIImageView!
-    //var bannerView: GADBannerView!
+    var bannerView: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupBannerAd(adUnitId: WidgetUtil.BANNER_AD_ID)
+        addBannerViewToView(bannerView)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -73,38 +76,32 @@ class BaseViewController: UIViewController {
     //    }
     
     
-    //    func addBannerViewToView(_ bannerView: GADBannerView) {
-    //        bannerView.translatesAutoresizingMaskIntoConstraints = false
-    //        view.addSubview(bannerView)
-    //        view.addConstraints(
-    //            [NSLayoutConstraint(item: bannerView,
-    //                                attribute: .bottom,
-    //                                relatedBy: .equal,
-    //                                toItem: bottomLayoutGuide,
-    //                                attribute: .top,
-    //                                multiplier: 1,
-    //                                constant: 0),
-    //             NSLayoutConstraint(item: bannerView,
-    //                                attribute: .centerX,
-    //                                relatedBy: .equal,
-    //                                toItem: view,
-    //                                attribute: .centerX,
-    //                                multiplier: 1,
-    //                                constant: 0)
-    //            ])
-    //    }
+    func setupBannerAd(adUnitId: String) {
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        bannerView.adUnitID = adUnitId
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+    }
     
-    //    func setupBannerAd(adUnitId: String) {
-    //        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-    //        bannerView.adUnitID = adUnitId
-    //        bannerView.rootViewController = self
-    //    }
-    //
-    //    func displayBannerAd() {
-    //        if bannerView != nil {
-    //            addBannerViewToView(bannerView)
-    //            bannerView.load(GADRequest())
-    //        }
-    //    }
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
 }
 

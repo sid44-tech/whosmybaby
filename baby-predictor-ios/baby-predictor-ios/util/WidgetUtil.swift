@@ -2,6 +2,14 @@
 import UIKit
 
 class WidgetUtil {
+    //LIVE AD IDs
+//    static let BANNER_AD_ID = "ca-app-pub-1753886194667699/4976289119"
+//    static let INTERSTITIAL_AD_ID = "ca-app-pub-1753886194667699/5996305864"
+    
+    //TEST AD IDs
+    static let BANNER_AD_ID = "ca-app-pub-3940256099942544/2934735716"
+    static let INTERSTITIAL_AD_ID = "ca-app-pub-3940256099942544/4411468910"
+    
     static let greenFontTag = "<font color='#00FF00' face='Avenir Black' size='4'>"
     static let whiteFontTag = "<font color='#FFFFFF' face='Avenir Black' size='4'>"
     static let blackFontTag = "<font color='#000000' face='Avenir Black' size='4'>"

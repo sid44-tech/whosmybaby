@@ -7,6 +7,8 @@ class StatisticalPredictorController : BaseViewController {
     var resultsButton: UIMaterialButton!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         setBackgroundPlain()
         buildHeaderSection()
         buildContent()
@@ -115,7 +117,7 @@ class StatisticalPredictorController : BaseViewController {
         resultsButton = UIMaterialButton(frame: CGRect(x: x+25, y: y, width: 250, height: 41), text: "Get Results!", color: ColorsUtil.RGBToUIColor(red: 144, green: 202, blue: 249), target: self, action: #selector(getResults))
         
         sview.addSubview(resultsButton)
-        y += 135
+        y += 190
         
         sview.contentSize = CGSize(width: self.view.frame.width, height: y)
         self.view.addSubview(sview)
@@ -238,6 +240,9 @@ class StatisticalPredictorController : BaseViewController {
         }
         StorageUtil.updatePropStringFor(key: "statistical-answers", value: answers)
         StorageUtil.updatePropStringFor(key: "statistical-selections", value: selections)
+        
+        GenderSelectController.LOAD_INTERSTITIAL = true
+        
         dismiss(animated: true, completion: nil)
     }
     

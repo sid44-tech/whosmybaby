@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class GenderSelectController : BaseViewController {
+class GenderSelectController : BaseViewController, GADInterstitialDelegate {
+    static var LOAD_INTERSTITIAL = false
     
+    var interstitial: GADInterstitial!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        interstitial = createAndLoadInterstitial()
         
         setBackgroundQuestions()
         buildHeaderSection()
@@ -19,7 +25,26 @@ class GenderSelectController : BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        if (GenderSelectController.LOAD_INTERSTITIAL) {
+            GenderSelectController.LOAD_INTERSTITIAL = false
+
+            if interstitial.isReady {
+                interstitial.present(fromRootViewController: self)
+            }
+        }
+        
         updateGenderPredictors()
+    }
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        let interstitialInner = GADInterstitial(adUnitID: WidgetUtil.INTERSTITIAL_AD_ID)
+        interstitialInner.delegate = self
+        interstitialInner.load(GADRequest())
+        return interstitialInner
+    }
+    
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        interstitial = createAndLoadInterstitial()
     }
     
     func buildContent() {

@@ -9,6 +9,8 @@ class MayanPredictorController : BaseViewController, UITextFieldDelegate {
     var conceptionYearInput: UIMaterialTextField!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         setBackgroundPlain()
         buildHeaderSection()
         buildContent()
@@ -58,6 +60,9 @@ class MayanPredictorController : BaseViewController, UITextFieldDelegate {
     @objc func getResults() {
         StorageUtil.updatePropStringFor(key: "mayan-age", value: conceptionAgeInput.text!)
         StorageUtil.updatePropStringFor(key: "mayan-year", value: conceptionYearInput.text!)
+        
+        GenderSelectController.LOAD_INTERSTITIAL = true
+        
         dismiss(animated: true, completion: nil)
     }
     
