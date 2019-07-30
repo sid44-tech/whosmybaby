@@ -183,8 +183,10 @@ class GenderSelectController : BaseViewController, GADInterstitialDelegate {
             return "U"
         } else if selection == "0" {
             return PredictorUtil().calculateChinese(conceptionDate: conceptionDate, dueDate: "", birthDate: birthDate)
-        } else {
+        } else if selection == "1" {
             return PredictorUtil().calculateChinese(conceptionDate: "", dueDate: conceptionDate, birthDate: birthDate)
+        } else {
+             return "U"
         }
     }
     

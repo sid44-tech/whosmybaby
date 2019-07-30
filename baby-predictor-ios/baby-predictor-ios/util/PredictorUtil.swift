@@ -18,7 +18,7 @@ class PredictorUtil {
         
         var conceptionMonth = -1
         var conceptionYear = -1
-        if (conceptionDate != "") {
+        if (conceptionDate.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines) != "") {
             let lunarCalendar = LunarCalendar()
             lunarCalendar.load(with: formatShortDateFromString(datestr: conceptionDate))
             lunarCalendar.initializeValue()
@@ -55,6 +55,10 @@ class PredictorUtil {
     }
     
     func formatShortDateFromString(datestr: String) -> Date {
+        if datestr.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines) == "" {
+            return Date()
+        }
+        
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "US_en")
         formatter.dateStyle = .short
@@ -62,6 +66,10 @@ class PredictorUtil {
     }
     
     func formatDateFromString(datestr: String) -> Date {
+        if datestr.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines) == "" {
+            return Date()
+        }
+        
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "US_en")
         formatter.dateStyle = .short
