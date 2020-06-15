@@ -11,6 +11,20 @@
 		326377A822EE326D00347F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326377A622EE326D00347F1A /* Main.storyboard */; };
 		326377AA22EE326E00347F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326377A922EE326E00347F1A /* Assets.xcassets */; };
 		326377AD22EE326E00347F1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326377AB22EE326E00347F1A /* LaunchScreen.storyboard */; };
+		327670AE24958EA100A8CBF5 /* ObesityHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327670AD24958EA100A8CBF5 /* ObesityHomeController.swift */; };
+		327670B02495C36800A8CBF5 /* AppearancePredictorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327670AF2495C36800A8CBF5 /* AppearancePredictorController.swift */; };
+		327670B22495C37400A8CBF5 /* MatePredictorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327670B12495C37400A8CBF5 /* MatePredictorController.swift */; };
+		327670B42495C79D00A8CBF5 /* scale_image_touch.png in Resources */ = {isa = PBXBuildFile; fileRef = 327670B32495C79D00A8CBF5 /* scale_image_touch.png */; };
+		327670B62495C7A600A8CBF5 /* scale_image_base.png in Resources */ = {isa = PBXBuildFile; fileRef = 327670B52495C7A600A8CBF5 /* scale_image_base.png */; };
+		327670BA2495C7D000A8CBF5 /* obesity_home_subtitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 327670B72495C7CF00A8CBF5 /* obesity_home_subtitle.png */; };
+		327670BB2495C7D000A8CBF5 /* obesity_home_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 327670B82495C7D000A8CBF5 /* obesity_home_info.png */; };
+		327670BC2495C7D000A8CBF5 /* obesity_home_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 327670B92495C7D000A8CBF5 /* obesity_home_title.png */; };
+		327670BE2495CC5100A8CBF5 /* ObesityQuestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327670BD2495CC5100A8CBF5 /* ObesityQuestionsController.swift */; };
+		327670C02495CC7E00A8CBF5 /* ObesityInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327670BF2495CC7E00A8CBF5 /* ObesityInfoController.swift */; };
+		327670C22496F89B00A8CBF5 /* UIMaterialRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327670C12496F89B00A8CBF5 /* UIMaterialRadioButton.swift */; };
+		327670C4249742DB00A8CBF5 /* ObesityCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 327670C3249742DB00A8CBF5 /* ObesityCalculator.m */; };
+		327670C72497E9B700A8CBF5 /* open_link.png in Resources */ = {isa = PBXBuildFile; fileRef = 327670C62497E9B700A8CBF5 /* open_link.png */; };
+		32AB217422FBA48100AE2801 /* transparent_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AB217322FBA48000AE2801 /* transparent_icon.png */; };
 		32AF2C0822EE350B0026F834 /* icon_small_too_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AF2BD322EE35080026F834 /* icon_small_too_close.png */; };
 		32AF2C0922EE350B0026F834 /* logo-152.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AF2BD422EE35080026F834 /* logo-152.fw.png */; };
 		32AF2C0A22EE350B0026F834 /* radio_button_normal_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AF2BD522EE35080026F834 /* radio_button_normal_selected.png */; };
@@ -90,6 +104,21 @@
 		326377A922EE326E00347F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		326377AC22EE326E00347F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		326377AE22EE326E00347F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327670AD24958EA100A8CBF5 /* ObesityHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObesityHomeController.swift; sourceTree = "<group>"; };
+		327670AF2495C36800A8CBF5 /* AppearancePredictorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearancePredictorController.swift; sourceTree = "<group>"; };
+		327670B12495C37400A8CBF5 /* MatePredictorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatePredictorController.swift; sourceTree = "<group>"; };
+		327670B32495C79D00A8CBF5 /* scale_image_touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scale_image_touch.png; sourceTree = "<group>"; };
+		327670B52495C7A600A8CBF5 /* scale_image_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scale_image_base.png; sourceTree = "<group>"; };
+		327670B72495C7CF00A8CBF5 /* obesity_home_subtitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obesity_home_subtitle.png; sourceTree = "<group>"; };
+		327670B82495C7D000A8CBF5 /* obesity_home_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obesity_home_info.png; sourceTree = "<group>"; };
+		327670B92495C7D000A8CBF5 /* obesity_home_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obesity_home_title.png; sourceTree = "<group>"; };
+		327670BD2495CC5100A8CBF5 /* ObesityQuestionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObesityQuestionsController.swift; sourceTree = "<group>"; };
+		327670BF2495CC7E00A8CBF5 /* ObesityInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObesityInfoController.swift; sourceTree = "<group>"; };
+		327670C12496F89B00A8CBF5 /* UIMaterialRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMaterialRadioButton.swift; sourceTree = "<group>"; };
+		327670C3249742DB00A8CBF5 /* ObesityCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObesityCalculator.m; sourceTree = "<group>"; };
+		327670C5249742EC00A8CBF5 /* ObesityCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObesityCalculator.h; sourceTree = "<group>"; };
+		327670C62497E9B700A8CBF5 /* open_link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open_link.png; sourceTree = "<group>"; };
+		32AB217322FBA48000AE2801 /* transparent_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent_icon.png; sourceTree = "<group>"; };
 		32AF2BD322EE35080026F834 /* icon_small_too_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_small_too_close.png; sourceTree = "<group>"; };
 		32AF2BD422EE35080026F834 /* logo-152.fw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-152.fw.png"; sourceTree = "<group>"; };
 		32AF2BD522EE35080026F834 /* radio_button_normal_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_button_normal_selected.png; sourceTree = "<group>"; };
@@ -152,7 +181,7 @@
 		32AF2C4B22EE36360026F834 /* baby-predictor-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "baby-predictor-ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		32AF2C4C22EE36360026F834 /* LunarCalendar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LunarCalendar.m; sourceTree = "<group>"; };
 		32AF2C4E22EE36490026F834 /* LunarCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LunarCalendar.h; sourceTree = "<group>"; };
-		32AF2C4F22EE365F0026F834 /* SolarTerm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SolarTerm.m; sourceTree = "<group>"; };
+		32AF2C4F22EE365F0026F834 /* SolarTerm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SolarTerm.m; path = ../../SolarTerm.m; sourceTree = "<group>"; };
 		32AF2C5122EE366B0026F834 /* SolarTerm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SolarTerm.h; sourceTree = "<group>"; };
 		32AF2C5322EE36B50026F834 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		32AF2C5522EE36C60026F834 /* ChinesePredictorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinesePredictorController.swift; sourceTree = "<group>"; };
@@ -214,6 +243,13 @@
 		32AF2BD222EE33FF0026F834 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				327670C62497E9B700A8CBF5 /* open_link.png */,
+				327670B82495C7D000A8CBF5 /* obesity_home_info.png */,
+				327670B72495C7CF00A8CBF5 /* obesity_home_subtitle.png */,
+				327670B92495C7D000A8CBF5 /* obesity_home_title.png */,
+				327670B52495C7A600A8CBF5 /* scale_image_base.png */,
+				327670B32495C79D00A8CBF5 /* scale_image_touch.png */,
+				32AB217322FBA48000AE2801 /* transparent_icon.png */,
 				32AF2C0122EE350A0026F834 /* appearance_image_glow.png */,
 				32AF2C0622EE350B0026F834 /* appearance_image.png */,
 				32AF2BE422EE35080026F834 /* appearance_title.png */,
@@ -276,6 +312,7 @@
 			children = (
 				32AF2C3E22EE35A70026F834 /* UIMaterialButton.swift */,
 				32AF2C4022EE35C00026F834 /* UIMaterialTextField.swift */,
+				327670C12496F89B00A8CBF5 /* UIMaterialRadioButton.swift */,
 			);
 			path = widget;
 			sourceTree = "<group>";
@@ -292,6 +329,8 @@
 				32AF2C4E22EE36490026F834 /* LunarCalendar.h */,
 				32AF2C4F22EE365F0026F834 /* SolarTerm.m */,
 				32AF2C5122EE366B0026F834 /* SolarTerm.h */,
+				327670C3249742DB00A8CBF5 /* ObesityCalculator.m */,
+				327670C5249742EC00A8CBF5 /* ObesityCalculator.h */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -299,11 +338,16 @@
 		32AF2C5222EE36AB0026F834 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				327670AF2495C36800A8CBF5 /* AppearancePredictorController.swift */,
 				32AF2C5322EE36B50026F834 /* BaseViewController.swift */,
 				32AF2C5522EE36C60026F834 /* ChinesePredictorController.swift */,
 				32AF2C5722EE36D50026F834 /* GenderSelectController.swift */,
 				32AF2C5922EE36ED0026F834 /* HomeController.swift */,
+				327670B12495C37400A8CBF5 /* MatePredictorController.swift */,
 				32AF2C5B22EE37040026F834 /* MayanPredictorController.swift */,
+				327670AD24958EA100A8CBF5 /* ObesityHomeController.swift */,
+				327670BF2495CC7E00A8CBF5 /* ObesityInfoController.swift */,
+				327670BD2495CC5100A8CBF5 /* ObesityQuestionsController.swift */,
 				32AF2C5D22EE37160026F834 /* OldWivesPredictorController.swift */,
 				32AF2C5F22EE37270026F834 /* StatisticalPredictorController.swift */,
 			);
@@ -409,7 +453,9 @@
 				32AF2C0922EE350B0026F834 /* logo-152.fw.png in Resources */,
 				32AF2C2322EE350B0026F834 /* statistical_title_glow.png in Resources */,
 				32AF2C3522EE350B0026F834 /* statistical_title_center.png in Resources */,
+				32AB217422FBA48100AE2801 /* transparent_icon.png in Resources */,
 				32AF2C3B22EE350B0026F834 /* appearance_image.png in Resources */,
+				327670C72497E9B700A8CBF5 /* open_link.png in Resources */,
 				32AF2C2222EE350B0026F834 /* logo-120.fw.png in Resources */,
 				32AF2C2422EE350B0026F834 /* logo-40.fw.png in Resources */,
 				32AF2C0A22EE350B0026F834 /* radio_button_normal_selected.png in Resources */,
@@ -425,6 +471,8 @@
 				32AF2C3C22EE350B0026F834 /* obesity_image_glow.png in Resources */,
 				32AF2C2622EE350B0026F834 /* back_icon.png in Resources */,
 				32AF2C1C22EE350B0026F834 /* logo-167.fw.png in Resources */,
+				327670BA2495C7D000A8CBF5 /* obesity_home_subtitle.png in Resources */,
+				327670BB2495C7D000A8CBF5 /* obesity_home_info.png in Resources */,
 				32AF2C2722EE350B0026F834 /* gender_image_glow.png in Resources */,
 				32AF2C2122EE350B0026F834 /* mate_image_glow.png in Resources */,
 				32AF2C3322EE350B0026F834 /* mayan_title_center.png in Resources */,
@@ -432,17 +480,20 @@
 				32AF2C2022EE350B0026F834 /* radio.png in Resources */,
 				32AF2C1422EE350B0026F834 /* whosmybaby_title.png in Resources */,
 				32AF2C1F22EE350B0026F834 /* logo-76.fw.png in Resources */,
+				327670BC2495C7D000A8CBF5 /* obesity_home_title.png in Resources */,
 				32AF2C1E22EE350B0026F834 /* logo-60.fw.png in Resources */,
 				32AF2C1B22EE350B0026F834 /* oldwivestales_title_center.png in Resources */,
 				32AF2C1922EE350B0026F834 /* appearance_title.png in Resources */,
 				32AF2C3122EE350B0026F834 /* logo-1024.fw.png in Resources */,
 				32AF2C3A22EE350B0026F834 /* gender_image.png in Resources */,
+				327670B62495C7A600A8CBF5 /* scale_image_base.png in Resources */,
 				32AF2C2822EE350B0026F834 /* logo-58.fw.png in Resources */,
 				32AF2C1A22EE350B0026F834 /* icon_small_boy.png in Resources */,
 				32AF2C3922EE350B0026F834 /* logo-20.fw.png in Resources */,
 				32AF2C2522EE350B0026F834 /* statistical_title.png in Resources */,
 				32AF2C0F22EE350B0026F834 /* radio_button_highlight.png in Resources */,
 				32AF2C3022EE350B0026F834 /* question_bg.png in Resources */,
+				327670B42495C79D00A8CBF5 /* scale_image_touch.png in Resources */,
 				326377A822EE326D00347F1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +547,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327670C22496F89B00A8CBF5 /* UIMaterialRadioButton.swift in Sources */,
+				327670B02495C36800A8CBF5 /* AppearancePredictorController.swift in Sources */,
 				32AF2C5622EE36C60026F834 /* ChinesePredictorController.swift in Sources */,
 				32AF2C4D22EE36360026F834 /* LunarCalendar.m in Sources */,
 				32AF2C5A22EE36ED0026F834 /* HomeController.swift in Sources */,
@@ -505,13 +558,18 @@
 				326377A322EE326D00347F1A /* AppDelegate.swift in Sources */,
 				32AF2C6022EE37270026F834 /* StatisticalPredictorController.swift in Sources */,
 				32AF2C4122EE35C00026F834 /* UIMaterialTextField.swift in Sources */,
+				327670C02495CC7E00A8CBF5 /* ObesityInfoController.swift in Sources */,
 				32AF2C5822EE36D50026F834 /* GenderSelectController.swift in Sources */,
 				32AF2C5C22EE37040026F834 /* MayanPredictorController.swift in Sources */,
+				327670C4249742DB00A8CBF5 /* ObesityCalculator.m in Sources */,
+				327670B22495C37400A8CBF5 /* MatePredictorController.swift in Sources */,
 				32AF2C5E22EE37160026F834 /* OldWivesPredictorController.swift in Sources */,
 				32AF2C4422EE35DD0026F834 /* ColorsUtil.swift in Sources */,
 				32AF2C4A22EE36160026F834 /* WidgetUtil.swift in Sources */,
 				32AF2C4822EE36010026F834 /* StorageUtil.swift in Sources */,
 				32AF2C3F22EE35A70026F834 /* UIMaterialButton.swift in Sources */,
+				327670BE2495CC5100A8CBF5 /* ObesityQuestionsController.swift in Sources */,
+				327670AE24958EA100A8CBF5 /* ObesityHomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,12 +718,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 7D8PE2QXA7;
 				INFOPLIST_FILE = "baby-predictor-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgenomix.baby.predictor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "baby-predictor-ios/util/baby-predictor-ios-Bridging-Header.h";
@@ -682,12 +743,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 7D8PE2QXA7;
 				INFOPLIST_FILE = "baby-predictor-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgenomix.baby.predictor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "baby-predictor-ios/util/baby-predictor-ios-Bridging-Header.h";

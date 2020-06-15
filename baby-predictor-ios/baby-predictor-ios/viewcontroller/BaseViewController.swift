@@ -59,6 +59,13 @@ class BaseViewController: UIViewController {
         let backGesture = UITapGestureRecognizer(target: self, action: #selector(BaseViewController.goBack))
         back.addGestureRecognizer(backGesture)
         bar.addSubview(back)
+        
+        let ticon = UIImageView(image: UIImage(named: "transparent_icon.png"))
+        ticon.frame.origin.x = self.view.frame.width - 50
+        ticon.frame.origin.y = WidgetUtil.backY
+        ticon.frame.size = CGSize(width: 34, height: 34)
+        ticon.isUserInteractionEnabled = true
+        bar.addSubview(ticon)
     }
     
     @objc func goBack() {

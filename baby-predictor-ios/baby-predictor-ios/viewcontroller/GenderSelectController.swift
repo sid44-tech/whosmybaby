@@ -15,13 +15,13 @@ class GenderSelectController : BaseViewController, GADInterstitialDelegate {
     var interstitial: GADInterstitial!
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
         interstitial = createAndLoadInterstitial()
         
         setBackgroundQuestions()
         buildHeaderSection()
         buildContent()
+        
+        super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -132,24 +132,28 @@ class GenderSelectController : BaseViewController, GADInterstitialDelegate {
     @objc func openMayan(_ gestureRecognizer: UITapGestureRecognizer) {
         let mayanViewController = self.storyboard?.instantiateViewController(withIdentifier: "MayanPredictorController") as! MayanPredictorController
         mayanViewController.modalTransitionStyle   = UIModalTransitionStyle.crossDissolve;
+        mayanViewController.modalPresentationStyle = .fullScreen
         present(mayanViewController, animated: true, completion: nil)
     }
     
     @objc func openChinese(_ gestureRecognizer: UITapGestureRecognizer) {
         let chineseViewController = self.storyboard?.instantiateViewController(withIdentifier: "ChinesePredictorController") as! ChinesePredictorController
         chineseViewController.modalTransitionStyle   = UIModalTransitionStyle.crossDissolve;
+        chineseViewController.modalPresentationStyle = .fullScreen
         present(chineseViewController, animated: true, completion: nil)
     }
     
     @objc func openStatistical(_ gestureRecognizer: UITapGestureRecognizer) {
         let statisticalViewController = self.storyboard?.instantiateViewController(withIdentifier: "StatisticalPredictorController") as! StatisticalPredictorController
         statisticalViewController.modalTransitionStyle   = UIModalTransitionStyle.crossDissolve;
+        statisticalViewController.modalPresentationStyle = .fullScreen
         present(statisticalViewController, animated: true, completion: nil)
     }
     
     @objc func openOldwives(_ gestureRecognizer: UITapGestureRecognizer) {
         let oldwivesViewController = self.storyboard?.instantiateViewController(withIdentifier: "OldWivesPredictorController") as! OldWivesPredictorController
         oldwivesViewController.modalTransitionStyle   = UIModalTransitionStyle.crossDissolve;
+        oldwivesViewController.modalPresentationStyle = .fullScreen
         present(oldwivesViewController, animated: true, completion: nil)
     }
     
@@ -182,9 +186,35 @@ class GenderSelectController : BaseViewController, GADInterstitialDelegate {
         if selection == "" {
             return "U"
         } else if selection == "0" {
-            return PredictorUtil().calculateChinese(conceptionDate: conceptionDate, dueDate: "", birthDate: birthDate)
+            let result = PredictorUtil().calculateChinese(conceptionDate: conceptionDate, dueDate: "", birthDate: birthDate)
+            if result == "U" {
+                let lunarCalendar = LunarCalendar()
+                lunarCalendar.load(with: formatShortDateFromString(datestr: conceptionDate))
+                lunarCalendar.initializeValue()
+                let conceptionMonth = Int(lunarCalendar.getLunarMonth())
+                
+                if (conceptionMonth % 2) == 0 {
+                    return "G"
+                } else {
+                    return "B"
+                }
+            }
+            return result
         } else if selection == "1" {
-            return PredictorUtil().calculateChinese(conceptionDate: "", dueDate: conceptionDate, birthDate: birthDate)
+            let result = PredictorUtil().calculateChinese(conceptionDate: "", dueDate: conceptionDate, birthDate: birthDate)
+            if result == "U" {
+                let lunarCalendar = LunarCalendar()
+                lunarCalendar.load(with: formatShortDateFromString(datestr: conceptionDate))
+                lunarCalendar.initializeValue()
+                let conceptionMonth = Int(lunarCalendar.getLunarMonth())
+                
+                if (conceptionMonth % 2) == 0 {
+                    return "G"
+                } else {
+                    return "B"
+                }
+            }
+            return result
         } else {
              return "U"
         }
@@ -246,6 +276,17 @@ class GenderSelectController : BaseViewController, GADInterstitialDelegate {
         }
         
         return "U"
+    }
+    
+    func formatShortDateFromString(datestr: String) -> Date {
+        if datestr.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines) == "" {
+            return Date()
+        }
+        
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "US_en")
+        formatter.dateStyle = .short
+        return formatter.date(from: datestr)!
     }
 }
 

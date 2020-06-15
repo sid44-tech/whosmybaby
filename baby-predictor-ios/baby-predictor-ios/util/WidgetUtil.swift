@@ -129,31 +129,30 @@ class WidgetUtil {
         button.font = UIFont(name: "AvenirNext-DemiBold", size: 12)
         button.layer.cornerRadius = 3
         button.clipsToBounds = true
-        //        button.layer.shadowOffset = CGSize(width: 1, height: 1)
-        //        button.layer.shadowOpacity = 1
-        //        button.layer.shadowRadius = 2
+
         return button
     }
     
-    //    static func getRightNavBarButtonItems(_ viewc: UIViewController, picksSold: UIImage?) -> [UIBarButtonItem] {
-    //        var navButtonsRight = [UIBarButtonItem]()
-    //
-    //        let logo = UIImage(named: "pfu_icon_logo_24.png")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-    //        let logoButton: UIBarButtonItem = UIBarButtonItem(image: logo, style: UIBarButtonItemStyle.plain, target: viewc, action: #selector(BaseViewController.userAccount))
-    //        logoButton.width = 20.0;
-    //        logoButton.isEnabled = false
-    //
-    //        navButtonsRight.append(logoButton)
-    //
-    //        if (picksSold != nil) {
-    //            let soldButton: UIBarButtonItem = UIBarButtonItem(image: picksSold, style: UIBarButtonItemStyle.plain, target: viewc, action: #selector(BaseViewController.showPicksSoldHelper))
-    //            soldButton.width = 24.0;
-    //            soldButton.isEnabled = true
-    //            navButtonsRight.append(soldButton)
-    //        }
-    //
-    //        return navButtonsRight
-    //    }
+    static func createRadioButton(x: CGFloat, y: CGFloat, width: CGFloat, text: String, selected: Bool, tag: Int, action: Selector) -> UIButton {
+        let button = UIButton(type: .custom)
+        button.frame = CGRect(x: x, y: y, width: width, height: 23)
+        button.setTitle(text, for: .normal)
+        button.titleLabel?.font = UIFont(name: "AvenirNext-Medium", size: 14)
+        button.setImage(UIImage(named: "radio.png"), for: .normal)
+        button.setImage(UIImage(named: "radio.png"), for: .highlighted)
+        button.setImage(UIImage(named: "radio_selected.png"), for: .selected)
+        button.imageView?.contentMode = .scaleAspectFit
+        button.contentHorizontalAlignment = .left
+        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
+        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: -52, bottom: 0, right: 0)
+        button.adjustsImageWhenHighlighted = false
+        button.isSelected = selected
+        button.isUserInteractionEnabled = true
+        button.tag = tag
+        let gesture = UITapGestureRecognizer(target: self, action: action)
+        button.addGestureRecognizer(gesture)
+        return button
+    }
     
     static func createSpacer(x: Int, y: Int, width: Int) -> UIView {
         let view = UIView(frame: CGRect(x: x, y: y, width: width, height: 1))
